@@ -34,7 +34,7 @@ To render thumbnails in your terminal, install one of these:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/keroro-search.git
+   git clone https://github.com/ahloiscreamo/keroro-search.git
    cd keroro-search
    ```
 
@@ -46,7 +46,7 @@ To render thumbnails in your terminal, install one of these:
 
 What `install.sh` does:
 - Copies `keroro-search.sh` as `~/.local/bin/keroro-search`
-- Installs UI thumbnail assets into `~/.local/share/keroro-search/png/`
+- Installs UI thumbnail assets into `~/.local/share/keroro-search/png/` and `~/.local/share/keroro-search/menu/`
 - Creates default config at `~/.config/keroro-search/keroro-search.conf` if not already present
 
 ## Usage
@@ -70,7 +70,6 @@ keroro-search
 
 Settings can be customized in `~/.config/keroro-search/keroro-search.conf`:
 
-- `PREF_SELECTOR`: Menu selector (`fzf`, `rofi`, or `dmenu`).
 - `IMAGE_SUPPORT`: Preview engine (`ueberzugpp`, `kitty`, `chafa`, `ueberzug`, or `none`).
 - `PREF_BROWSER`: Browser used for cookie authentication (`firefox`, `chrome`, `brave`, etc.).
 - `LIST_LENGTH`: Number of items displayed per page (default: `30`).

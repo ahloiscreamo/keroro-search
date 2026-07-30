@@ -151,15 +151,7 @@ function load_config() {
   fi
 
   if [[ $LIST_LENGTH -gt 99 ]];then LIST_LENGTH=99;fi;
-  ROFI_FORMAT='rofi -dmenu -l 20 -width 40 -i -p ';
-  FZF_FORMAT="fzf --ansi --cycle --print-query --preview-window=0 --reverse --tiebreak=begin --border=rounded +m --info=hidden --header-first --prompt=";
-  DMENU_FORMAT="dmenu -fn 13 -nb '#2E3546' -sb '#434C5E' -l 20sc -i -p "
-  if [[ $PREF_SELECTOR == "rofi" ]]
-  then PREF_SELECTOR=$ROFI_FORMAT
-  elif [[ $PREF_SELECTOR == "fzf" ]]
-  then PREF_SELECTOR=$FZF_FORMAT
-  elif [[ $PREF_SELECTOR == "dmenu" ]]
-  then PREF_SELECTOR=$DMENU_FORMAT;fi;
+  PREF_SELECTOR="fzf --ansi --cycle --print-query --preview-window=0 --reverse --tiebreak=begin --border=rounded +m --info=hidden --header-first --prompt=";
  else
   notify 9000 "$SHARE_DIR"/keroro-search.png "Exiting keroro-search"
   echo -e "\e[31mConfigurations not loaded correctly.Please make sure that:\n- You have installed the script correctly using the install.sh.\n- All the variables have assigned acceptable values.$normal"
