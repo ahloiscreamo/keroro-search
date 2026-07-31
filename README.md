@@ -2,7 +2,7 @@
 
 A fast, terminal-first YouTube client built with `bash`, `fzf`, `yt-dlp`, and `mpv`. Search for videos, playlists, or channels, browse subscription feeds, and stream content with inline thumbnail previews right inside your terminal.
 
-![keroro-search preview](png/keroro-search.png)
+<img width="1024" height="1024" alt="keroro-watch" src="https://github.com/user-attachments/assets/5f503453-e7c8-488a-91c4-caa7a4ba24eb" />
 
 ## Features
 
